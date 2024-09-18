@@ -20,7 +20,11 @@ MySQL 已就绪，无报错。在安装全局管理后 keycloak 无法启动（>
 ![img](https://docs.daocloud.io/daocloud-docs-images/docs/reference/images/restart02.png)
 
 1. 检查 MySQL 资源占用是否到达 limit 限制
+<<<<<<< HEAD
 2. 检查 MySQL 中 database keycloak table 的数量是不是 95, 如数量少了，说明数据库表初始化有问题
+=======
+2. 检查 MySQL 中 database keycloak table 的数量是不是 95(keycloak不同版本数据库数量可能会不一样，可以和同版本的开发或测试环境的keycloak数据库数量比较下), 如数量少了，说明数据库表初始化有问题
+>>>>>>> 808f3bc2a (correct virtnest dependency os version. 2. correct ghippo keycloak table number(https://gitlab.daocloud.cn/ndx/ghippo/-/issues/1443))
 3. 删除 keycloak database 并创建，提示 **CREATE DATABASE IF NOT EXISTS keycloak CHARACTER SET utf8**
 4. 重启 keycloak Pod 解决问题
 
